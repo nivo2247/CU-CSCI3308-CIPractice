@@ -1,5 +1,5 @@
-# Nick Vomund
-# CI Practice
+# Jacob Christiansen
+# Lab 12
 
 CC = gcc
 CFLAGS = -c -g -Wall -Wextra
