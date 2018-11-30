@@ -146,17 +146,19 @@ START_TEST(test_2d_midpoint)
 END_TEST
 
 /* coord_2d area Test */
-START_TEST(coord_2d_area_triangle)
+START_TEST(test_2d_area_triangle)
 {
 
     coord_2d_t a;
     coord_2d_t b;
     coord_2d_t c;
 
-    a.x = a.y = 0;
-    b.x = b.y = 1;
-    c.x = 0;
-    c.y = 1;
+    a.x = 0;
+    a.y = 0;
+    b.x = 0;
+    b.y = 20;
+    c.x = 10;
+    c.y = 15;
     ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.5);
 
     a.x = a.y = 0;
